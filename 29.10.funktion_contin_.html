@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>                       // Максимальная длинна слова в предложении Задача 8
+str = prompt()
+function maxLength(givenStr){
+    if (givenStr == "")
+        return 0;
+    let splitStr = givenStr.split(" ");
+    let max = splitStr[0].length;
+    for (i = 1; i < splitStr.length; i++)
+        if (splitStr[i].length > max)
+            max = splitStr[i].length;
+    return max; 
+}
+alert(maxLength(str))
+
+
+str = prompt()                                          // зАДАЧА 9 СРЕДНЕЕ
+function meanLength(givenStr){
+    if (givenStr == "")
+        return 0;
+    let splitStr = givenStr.split(" ");
+    let sum = 0;
+    for (i = 0; i < splitStr.length; i++)
+        if (splitStr[i].length > max)
+            sum += splitStr[i].length;
+    return sum / splitStr.length; 
+}
+alert(meanLength(str))
+
+
+</script>
+
+</body>
+</html>
